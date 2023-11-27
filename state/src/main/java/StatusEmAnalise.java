@@ -18,4 +18,9 @@ public class StatusEmAnalise extends ProdutoStatusAlfandega{
         produto.setStatus(StatusLiberado.getInstance());
         return true;
     }
+
+    public boolean retornar(Produto produto) {
+        produto.setStatus(StatusRetornando.getInstance());
+        return true;
+    }
 }

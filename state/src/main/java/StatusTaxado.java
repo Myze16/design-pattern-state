@@ -9,7 +9,7 @@ public class StatusTaxado extends ProdutoStatusAlfandega{
         return "Taxado";
     }
 
-    public boolean taxar(Produto produto) {
+    public boolean receberPagamento(Produto produto) {
         produto.setStatus(StatusAguardandoPagamento.getInstance());
         return true;
     }
